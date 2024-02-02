@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="index.css">
+    <title>Chess Game</title>
+</head>
+<body>
+    <section class="page">
+        <div class="board " id="main">
+            <div class="row" id="row8">
+                <div class="box bg-white" id="81" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="top-left">8</div>
+                    <div class="br"></div>
+                </div>
+                <div class="box bg-black" id="82" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="bkn"></div>
+                </div>
+                <div class="box bg-white" id="83" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="bb"></div>
+                </div>
+                <div class="box bg-black" id="84" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="bq"></div>
+                </div>
+                <div class="box bg-white" id="85" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="bK"></div>
+                </div>
+                <div class="box bg-black" id="86" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="bb"></div>
+                </div>
+                <div class="box bg-white" id="87" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="bkn"></div>
+                </div>
+                <div class="box bg-black" id="88" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="br"></div>
+                </div>
+            </div>
+            <div class="row" id="row7">
+                <div class="box bg-black" id="71" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="top-left">7</div>
+                    <img src="bp.png" alt="blackpawn"  class="bp" id="bp1" draggable="true" ondragstart="drag(event)">
+                </div>
+                <div class="box bg-white" id="72" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img src="bp.png" alt="blackpawn"  class="bp" id="bp2" draggable="true" ondragstart="drag(event)">
+                </div>
+                <div class="box bg-black" id="73" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img src="bp.png" alt="blackpawn"  class="bp" id="bp3" draggable="true" ondragstart="drag(event)">
+                </div>
+                <div class="box bg-white" id="74" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img src="bp.png" alt="blackpawn"  class="bp" id="bp4" draggable="true" ondragstart="drag(event)">
+                </div>
+                <div class="box bg-black" id="75" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img src="bp.png" alt="blackpawn"  class="bp" id="bp5" draggable="true" ondragstart="drag(event)">
+                </div>
+                <div class="box bg-white" id="76" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img src="bp.png" alt="blackpawn"  class="bp" id="bp6" draggable="true" ondragstart="drag(event)">
+                </div>
+                <div class="box bg-black" id="77" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img src="bp.png" alt="blackpawn"  class="bp" id="bp7" draggable="true" ondragstart="drag(event)">
+                </div>
+                <div class="box bg-white" id="78" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img src="bp.png" alt="blackpawn"  class="bp" id="bp8" draggable="true" ondragstart="drag(event)">
+                </div>
+            </div>
+            <div class="row" id="row6">
+                <div class="box bg-white" id="61" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="top-left">6</div>
+                </div>
+                <div class="box bg-black" id="62" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="box bg-white" id="63" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="box bg-black" id="64" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="box bg-white" id="65" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="box bg-black" id="66" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="box bg-white" id="67" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="box bg-black" id="68" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+            <div class="row" id="row5">
+                <div class="box bg-black" id="51" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="top-left">5</div>
+                </div>
+                <div class="box bg-white" id="52" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="box bg-black" id="53" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="box bg-white" id="54" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="box bg-black" id="55" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="box bg-white" id="56" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="box bg-black" id="57" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="box bg-white" id="58" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+            <div class="row" id="row4">
+                <div class="box bg-white" id="41" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="top-left">4</div>
+                </div>
+                <div class="box bg-black" id="42" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="box bg-white" id="43" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="box bg-black" id="44" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="box bg-white" id="45" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="box bg-black" id="46" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="box bg-white" id="47" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="box bg-black" id="48" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+            <div class="row" id="row3" >
+                <div class="box bg-black" id="31" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="top-left">3</div>
+                </div>
+                <div class="box bg-white" id="32" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="box bg-black" id="33" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="box bg-white" id="34" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="box bg-black" id="35" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="box bg-white" id="36" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="box bg-black" id="37" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="box bg-white" id="38" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+            <div class="row" id="row2">
+                <div class="box bg-white" id="21"  ondrop="drop(event)" ondragover="allowDrop(event)" >
+                    <div class="top-left">2</div>
+                    <img src="wp.png" alt="whitepawn"  class="wp" id="wp1" draggable="true" ondragstart="drag(event)">
+                </div>
+                <div class="box bg-black" id="22" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img src="wp.png" alt="whitepawn"  class="wp" id="wp2" draggable="true" ondragstart="drag(event)">
+                </div>
+                <div class="box bg-white" id="23" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img src="wp.png" alt="whitepawn"  class="wp" id="wp3" draggable="true" ondragstart="drag(event)">
+                </div>
+                <div class="box bg-black" id="24" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img src="wp.png" alt="whitepawn"  class="wp" id="wp4" draggable="true" ondragstart="drag(event)">
+                </div>
+                <div class="box bg-white" id="25" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img src="wp.png" alt="whitepawn"  class="wp" id="wp5" draggable="true" ondragstart="drag(event)">
+                </div>
+                <div class="box bg-black" id="26" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img src="wp.png" alt="whitepawn"  class="wp" id="wp6" draggable="true" ondragstart="drag(event)">
+                </div>
+                <div class="box bg-white" id="27" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img src="wp.png" alt="whitepawn"  class="wp" id="wp7" draggable="true" ondragstart="drag(event)">
+                </div>
+                <div class="box bg-black" id="28" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img src="wp.png" alt="whitepawn"  class="wp" id="wp8" draggable="true" ondragstart="drag(event)">
+                </div>
+            </div>
+            <div class="row" id="row1">
+                <div class="box bg-black" id="11" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="wr"></div>
+                    <div class="top-left">1</div>
+                    <div class="bottom-right">a</div>
+                    
+                </div>
+                <div class="box bg-white" id="12" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="wkn"></div>
+                    <div class="bottom-right">b</div>
+                </div>
+                <div class="box bg-black" id="13" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="wb"></div>
+                    <div class="bottom-right">c</div>
+                </div>
+                <div class="box bg-white" id="14" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="wq"></div>
+                    <div class="bottom-right">d</div>
+                </div>
+                <div class="box bg-black" id="15" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="wK"></div>
+                    <div class="bottom-right">e</div>
+                </div>
+                <div class="box bg-white" id="16" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="wb"></div>
+                    <div class="bottom-right">f</div>
+
+                </div>
+                <div class="box bg-black" id="17" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="wkn"></div>
+                    <div class="bottom-right">g</div>
+                </div>
+                <div class="box bg-white" id="18" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="wr"></div>
+                    <div class="bottom-right">h</div>
+                </div>
+            </div>
+            <button type="button" id="rstrt" class="bttn" onclick="resetToOriginal()">Restart</button>
+        </div>
+    </section>
+    
+</body>
+<script src="index.js"></script>
+</html>

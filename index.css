@@ -1,0 +1,163 @@
+html{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    color:green;
+    font-size: 1.3rem;
+    background-color: aqua;
+    /* overflow: hidden; */
+}
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    width: 100vw;
+}
+.board{
+    top: 50px;
+    height: 700px;
+    width: 600px;
+    /* border: 3px solid black; */
+    display: flex;
+    flex-direction: column;
+
+}
+.bttn{
+    margin: 10px 5px;
+    width: 15%;
+    height: 40px;
+    border: 1px solid black;
+    background-color: rgb(75, 163, 12);
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.bttn:hover{
+    width: 17%;
+    height: 44px;
+}
+.row{
+    display: flex;
+}
+.box{
+    position: relative;
+    height: 75px;
+    width: 75px;
+    /* border: 1px solid black; */
+    padding: 0px;
+    margin: 0px;
+}
+.border{
+    border: 1px solid red;
+}
+.bg-black{
+    background-color: rgb(78, 55, 7);
+}
+.bg-white{
+    background-color: white;
+}
+
+.bp{
+    /* background:url("bp.png") no-repeat center center/cover; */
+    height: 90%;
+    width: 90%;
+    padding: 0px;
+    margin: 0px;
+}
+.br{
+    background:url("br.png") no-repeat center center/cover;
+    height: 90%;
+    width: 90%;
+    padding: 0px;
+    margin: 0px;
+}
+.bkn{
+    background: url("bkn.png") no-repeat center center/cover;
+    height: 90%;
+    width: 86%;
+    padding: 0px;
+    margin: 3px;
+}
+.bb{
+    background:url("bb.png") no-repeat center center/cover;
+    height: 77%;
+    width: 70%;
+    padding: 0px;
+    margin: 9px;
+}
+.bK{
+    background:url("bK.png") no-repeat center center/cover;
+    height: 90%;
+    width: 90%;
+    padding: 0px;
+    margin: 0px;
+}
+.bq{
+    background: url("bq.png") no-repeat center center/cover;
+    height: 84%;
+    width: 84%;
+    padding: 0px;
+    margin: 5px;
+}
+.wp{
+    height: 77%;
+    width: 59%;
+    padding: 0px;
+    margin: 10px 13px;
+    /* margin-left: 17px; */
+}
+.wr{
+    background: url("wr.png") no-repeat center center/cover;
+    height: 90%;
+    width: 84%;
+    padding: 0px;
+    margin: 4px;
+}
+.wkn{
+    background: url("wkn.png") no-repeat center center/cover;
+    height: 77%;
+    width: 77%;
+    padding: 0px;
+    margin: 6px;
+}
+.wb{
+    background:url("wb.png") no-repeat center center/cover;
+    height: 96%;
+    width: 96%;
+    padding: 0px;
+    margin: 2px;
+}
+.wK{
+    background: url("wK.png") no-repeat center center/cover;
+    height: 85%;
+    width: 86%;
+    padding: 0px;
+    margin: 4px;
+}
+.wq{
+    background: url("wq.png") no-repeat center center/cover;
+    height: 86%;
+    width: 85%;
+    padding: 0px;
+    margin: 5px;
+}
+.top-left{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+.bottom-right{
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+}
